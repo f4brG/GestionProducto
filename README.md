@@ -4,4 +4,8 @@
 3. Para probar las solicitudes se utilizó la plataforma de Postman la cual permitió enviar diferentes solicitudes como: GET, POST, PUT Y DELETE.
 4. Para visualizar los datos se utilizó la base local Laragon
 
+## Capturas
+
 ![Captura de pantalla 2025-05-24 203917](https://github.com/user-attachments/assets/c5e11084-a70a-4ab3-9aec-a178ab91335c)
+
+![Captura de pantalla 2025-05-24 204415](https://github.com/user-attachments/assets/590a5f29-8054-45ed-b1e1-681c9612b0a2)
