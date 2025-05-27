@@ -28,6 +28,9 @@ public class Producto {
     private String descripcion;
     
     @Column(nullable = false)
+    private String categoria;
+    
+    @Column(nullable = false)
     private double precio;
     
     @Column(nullable = false)

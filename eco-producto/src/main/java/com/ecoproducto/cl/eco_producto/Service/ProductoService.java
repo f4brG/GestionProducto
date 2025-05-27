@@ -39,6 +39,8 @@ public class ProductoService {
         prodExistente.setNombre(prodActualizado.getNombre());
         prodExistente.setPrecio(prodActualizado.getPrecio());
         prodExistente.setStock(prodActualizado.getStock());
+        prodExistente.setDescripcion(prodActualizado.getDescripcion());
+        prodExistente.setCategoria(prodActualizado.getCategoria());
 
         return productoRepository.save(prodExistente);
         
@@ -47,5 +49,21 @@ public class ProductoService {
     public void delete(Long id){
         productoRepository.deleteById(id);
     }
+
+    public List<Producto> buscarporNombre(String nombre){
+        return productoRepository.findByNombreContainingIgnoreCase(nombre);
+    }
+    
+    public List<Producto> buscarporCategoria(String categoria){
+        return productoRepository.findByCategoriaIgnoreCase(categoria);
+    }
+
+    public Producto findbyId(Long id){
+        return productoRepository.findById(id).orElse(null);
+    }
+
+    
+
+    
 
 }
